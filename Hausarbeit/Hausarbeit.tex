@@ -1,0 +1,103 @@
+\documentclass[11pt, a4paper]{scrartcl}
+
+% Packages
+\usepackage[style=authoryear]{biblatex}
+\addbibresource{references.bib}       
+\usepackage{setspace}                         
+\usepackage[margin=1in, top=1in]{geometry}    
+\usepackage[german]{babel}
+\usepackage{csquotes}
+\usepackage{tgheros}
+\usepackage[T1]{fontenc}
+\usepackage{lipsum}       
+\usepackage{graphicx}     
+\usepackage{array}        
+\usepackage{amsmath}
+\usepackage{tabularx}      
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks   = true,    
+  urlcolor     = black,   
+  linkcolor    = black,   
+  citecolor    = black    
+}     
+
+% Commands
+\renewcommand*\familydefault{\sfdefault}
+\renewcommand*\contentsname{Inhaltsverzeichnis}  
+\newcommand{\ltab}{\raggedright\arraybackslash} 
+\newcommand{\ctab}{\centering\arraybackslash}  
+\newcommand{\rtab}{\raggedleft\arraybackslash}  
+
+% Setup
+
+
+% Head
+\titlehead{\includegraphics[scale=0.25]{FU_Logo.pdf} \\ Fachbereich Geowissenschaften \\ Institut für Geographische Wissenschaften}
+\title{XXXX} 
+\subject{XXXX} 
+\author{XXXX} 
+\date{XXXX} 
+
+\begin{document}
+\hypersetup{pageanchor=false} 
+\onehalfspacing 
+\maketitle 
+\thispagestyle{empty} 
+\begin{center}
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+\begin{tabularx}{0.8\textwidth}{ 
+  | >{\raggedright\arraybackslash}X 
+  | >{\raggedright\arraybackslash}X | }
+    \hline
+    Name: &  \\
+    E-Mail: &  \\
+    Matrikelnummer: &  \\
+    Fachsemester: &  \\
+    Dozent*in: &   \\
+    Abgabedatum: & \today \\
+    \hline
+\end{tabularx}
+\end{center}
+\pagebreak
+\newpage
+
+% Contents
+\pagenumbering{roman}
+\tableofcontents 
+\newpage
+\listoffigures 
+\newpage
+\listoftables 
+\newpage
+
+% Document
+\hypersetup{pageanchor=true}
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\section{Einleitung}
+\newpage
+
+\section{Hauptteil}
+\newpage
+
+\section{Schluss}
+\newpage
+
+\section{Literaturverzeichnis}
+\printbibliography[heading=none] 
+\newpage
+
+\addsec{Anhang}
+\thispagestyle{empty} 
+
+\end{document}
